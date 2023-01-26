@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&family=Righteous&family=Yeon+Sung&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+section::before{
+content: ' ';
+  /* display: block; */
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: center / cover no-repeat url('/bg1.jpg') ;
+  z-index: -1;
+}
+
+.heading{
+    color: rgb(217 165 165);
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'cursive'; 
+    border: 2px solid rgb(209, 170, 221);
+    border-radius: 30px;
+    padding: 10px;
+    width: 30vw;
+    margin: auto;
+    margin-top: 150px;
+}
+.startBox{
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 242, 242);
+}
+.myGame{
+    margin: auto;
+    margin: 20px 0px;
+    text-align: center; 
+    font-family: 'Yeon Sung', cursive; 
+    font-size: 4rem;
+    color: rgb(162, 146, 255);
+    font-weight: bold;
+}
+#computerPlay, #humanPlay{
+    text-align: center;
+   margin: 0px 10px;
+    margin-top: 20px;
+    text-decoration: none;
+   border-radius: 15px;
+    color: white;
+    border: 2px solid rgb(240, 161, 236);
+    background-color: rgb(87, 4, 90);
+    font-size: 1.2rem;
+    padding: 5px 15px ;
+  
+}
+#computerPlay:hover{
+    font-size: 1.5rem;
+}
+#humanPlay:hover{
+    font-size: 1.5rem;
+}
+.modeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.head3{
+    font-size: 1.2rem;
+    font-family: 'Prosto One', cursive;
+    padding: 5px;
+    color: rgb(186, 133, 247);
+}
+.chooseMode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 446px) {
+    .heading{
+        font-weight: 2rem;
+        width: 40vh;
+    }
+    .myGame{
+        font-size: 2rem;
+    }
+    #computerPlay, #humanPlay{
+        margin-top: 30px;
+        padding: 5px;
+        font-size: 1rem;
+    }
+    .head3{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+}

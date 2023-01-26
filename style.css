@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&family=Righteous&family=Yeon+Sung&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+}
+    
+.primary{
+    text-align: center;
+    margin: 25px 0px;
+/* font-family: 'Righteous', cursive; */
+    font-family: 'Yeon Sung', cursive; 
+}
+.primary span{
+    padding: 15px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.playerInfo{
+    border: 3px solid rgb(52, 36, 78);
+    color: rgb(226, 133, 195);
+    text-align: center;
+    padding:10px 5px;
+    width: 24vw;
+    margin:0px auto;
+    margin-top:40px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+.x-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:auto;
+    text-align: center;
+  
+}
+.o-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:auto;
+    text-align: center; 
+}
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 8vw);
+    grid-template-columns: repeat(3, 8vw);
+    border: 5px solid rgb(111, 56, 116);
+}
+.box{
+    border: 2px solid rgb(250, 241, 111);
+    font-family: 'Prosto One', cursive;
+    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: rgb(45, 219, 211);
+    cursor: pointer;
+}
+.box:hover{
+    background-color: rgb(197, 162, 204);
+    opacity: 0.5;
+}
+.x-info, .o-info{
+    color: white;
+}
+.setting{
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+}
+#playAgain{
+    border:1px solid rgb(161, 3, 209);
+    padding: 4px 18px;
+    margin: 0px 10px;
+    font-size: 1.2rem;
+    background: rgb(31, 17, 39);
+    color: white;
+    border-radius: 5px;
+}
+#home{
+    border:1px solid rgb(161, 3, 209);
+margin: 0px 22px;
+padding: 3px;
+border-radius: 10px;
+color: white;
+}
+#home a{
+    color:rgb(91, 12, 116) ;
+}
+#reset{
+    border:1px solid rgb(161, 3, 209);
+    padding: 4px 18px;
+    margin: 0px 10px;
+    font-size: 1.2rem;
+    background: rgb(31, 17, 39);
+    color: white;
+    border-radius: 5px;
+}
+
+/* Utility Classes */
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.tic{
+    color: rgb(52, 187, 180);
+}
+.tac{
+    color: rgb(243, 220, 14);
+}
+.toe{
+    color: rgb(29, 196, 104);
+}
+.pointsO{
+    padding: 10px 0px;
+}
+.pointsX{
+    padding: 10px 0px;
+}
+.playerX{
+    border: 3px solid rgb(52, 36, 78);
+    padding: 5px 15px;
+    font-size: 1.3rem;
+    color: rgb(29, 196, 104);
+    border-radius: 5px;
+}
+.playerO{
+    border: 3px solid rgb(52, 36, 78);
+    padding: 5px 15px;
+    font-size: 1.3rem;
+    color: rgb(52, 187, 180);
+    border-radius: 5px;
+}
+/* .line{
+    height: 8vh;
+    width: 8vw;
+} */
+
+
+/* Responsiveness */
+@media only screen and (min-width: 390px) and (max-width: 852px){
+    .playerInfo{
+        font-size: 1.5rem;
+        padding: 5px;
+        width: 35vh;
+        margin-bottom: 30px;
+    }
+    .gameContainer{
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 390px){
+    .playerX, .playerO{
+        font-size: 1.1rem;
+        padding: 0px;
+    }
+    #playAgain{
+        padding: 0px 0px;
+        font-size: 1rem;
+    }
+    #reset{
+        padding: 0px 3px;
+        font-size: 1rem;
+        /* margin: 0px 2px; */
+    }
+    .playerInfo{
+        font-size: 1.3rem;
+        padding: 5px;
+        width: 35vh;
+        margin-bottom: 50px;
+    }
+    #draw{
+        margin: 0px 10px;
+    }
+    .gameContainer{
+        margin-bottom: 30px;
+    }
+    
+
+}
